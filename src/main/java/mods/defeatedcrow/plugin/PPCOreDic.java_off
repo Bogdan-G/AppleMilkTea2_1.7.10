@@ -1,0 +1,46 @@
+package mods.defeatedcrow.plugin;
+
+import net.peaceplantcraft.items.PPC_Items;
+import cpw.mods.fml.common.Loader;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
+
+public class PPCOreDic {
+
+   public static void load() {
+      if(Loader.isModLoaded("peaceplantcraft")) {
+         registerDic();
+      }
+
+   }
+
+   static void registerDic() {
+      OreDictionary.registerOre("cropBroccoli", new ItemStack(PPC_Items.Crop_Broccoli));
+      OreDictionary.registerOre("cropCabagge", new ItemStack(PPC_Items.Crop_Cabbage));
+      OreDictionary.registerOre("cabagge", new ItemStack(PPC_Items.Crop_Cabbage));
+      OreDictionary.registerOre("cropCarrot", new ItemStack(PPC_Items.Crop_Carrot));
+      OreDictionary.registerOre("cropChineseCabbage", new ItemStack(PPC_Items.Crop_ChineseCabbage));
+      OreDictionary.registerOre("cropCorn", new ItemStack(PPC_Items.Crop_Corn));
+      OreDictionary.registerOre("cropCucumber", new ItemStack(PPC_Items.Crop_Cucumber));
+      OreDictionary.registerOre("cropEggplant", new ItemStack(PPC_Items.Crop_Eggplant));
+      OreDictionary.registerOre("eggplant", new ItemStack(PPC_Items.Crop_Eggplant));
+      OreDictionary.registerOre("cropGarlic", new ItemStack(PPC_Items.Crop_Garlic));
+      OreDictionary.registerOre("cropGreenPepper", new ItemStack(PPC_Items.Crop_GreenPepper));
+      OreDictionary.registerOre("cropGreenSoybeans", new ItemStack(PPC_Items.Crop_GreenSoybeans));
+      OreDictionary.registerOre("cropLettuce", new ItemStack(PPC_Items.Crop_Lettuce));
+      OreDictionary.registerOre("cropLotusRoot", new ItemStack(PPC_Items.Crop_LotusRoot));
+      OreDictionary.registerOre("cropOnion", new ItemStack(PPC_Items.Crop_Onion));
+      OreDictionary.registerOre("onion", new ItemStack(PPC_Items.Crop_Onion));
+      OreDictionary.registerOre("cropPaprika", new ItemStack(PPC_Items.Crop_Paprika));
+      OreDictionary.registerOre("cropPotato", new ItemStack(PPC_Items.Crop_Potato));
+      OreDictionary.registerOre("cropPumpkin", new ItemStack(PPC_Items.Crop_Pumpkin));
+      OreDictionary.registerOre("cropRadish", new ItemStack(PPC_Items.Crop_Radish));
+      OreDictionary.registerOre("radish", new ItemStack(PPC_Items.Crop_Radish));
+      OreDictionary.registerOre("cropSpinach", new ItemStack(PPC_Items.Crop_Spinach));
+      OreDictionary.registerOre("cropSpringOnion", new ItemStack(PPC_Items.Crop_SpringOnion));
+      OreDictionary.registerOre("cropSweetPotato", new ItemStack(PPC_Items.Crop_SweetPotato));
+      OreDictionary.registerOre("cropTomato", new ItemStack(PPC_Items.Crop_Tomato));
+      OreDictionary.registerOre("tomato", new ItemStack(PPC_Items.Crop_Tomato));
+      OreDictionary.registerOre("cropTurnip", new ItemStack(PPC_Items.Crop_Turnip));
+   }
+}
